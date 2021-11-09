@@ -18,7 +18,7 @@ public class Post implements Serializable {
 	@Id
 	private String id;
 	private Date date;
-	private String titile;
+	private String title;
 	private String body;
 	private AuthorDTO author;
 
@@ -28,11 +28,11 @@ public class Post implements Serializable {
 
 	}
 
-	public Post(String id, Date date, String titile, String body, AuthorDTO author) {
+	public Post(String id, Date date, String title, String body, AuthorDTO author) {
 		super();
 		this.id = id;
 		this.date = date;
-		this.titile = titile;
+		this.title = title;
 		this.body = body;
 		this.author = author;
 	}
@@ -54,11 +54,11 @@ public class Post implements Serializable {
 	}
 
 	public String getTitile() {
-		return titile;
+		return title;
 	}
 
-	public void setTitile(String titile) {
-		this.titile = titile;
+	public void setTitile(String title) {
+		this.title = title;
 	}
 
 	public String getBody() {
